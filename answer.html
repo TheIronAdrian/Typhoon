@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Typhoon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" rel="stylesheet">
+</head>    
+<body>
+    <section class="header">
+       <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <!--<i class="fa-solid fa-xmark"></i>-->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="answer.html">WEATHER</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+           <!-- <i class="fa-solid fa-bars"></i> -->
+        </nav>  
+    </section>
+    <div class="text-box">
+    
+    <div class="wrapper">
+    <section class="input-part">
+        <p class="info-txt">Please enter a valid city name</p>
+        <input type="text" placeholder="Enter city name" required >
+        <div class="separator"></div>
+        <button>Get Device Location</button>
+    </section>  
+    <section class="weather-part" style="text-align: center;">
+        <div class="temp">
+            <span class="numb">13</span>
+            <span class="deg">°</span>C    
+        </div>
+        <div class="weather">Broken Clouds</div>
+        <div class="location">
+            <i class="bx bx-map"></i>
+            <span>Kathmandu, Nepal</span>
+        </div>
+        <div class="bottom-details">
+           <div class="column feels">
+              <i class="bx bxs-thermometer"></i>
+              <div class="details">
+                 <div class="temp">
+                     <span class="numb">17</span>
+                     <span class="deg">°</span>
+                 </div>   
+                 <p>Feels like</p>
+              </div>  
+           </div> 
+           <div class="column humidity">
+                <i class="bx bxs-droplet-half"></i>
+                <div class="details">
+                    <span class="numb">84%</span>
+                    <p>Humidity</p>
+                </div>
+           </div>
+        </div>  
+    </section>
+    </div>
+    </div>
+    <script src="./country-list.js"></script>
+    <script src="./script.js"></script>
+
+    <div style="position: absolute; bottom: 5px; text-align: center; color: beige; width: 100%;">
+        Made by Mihai Mocanu (C) 2022
+    </div>
+</body>
+</html>   
