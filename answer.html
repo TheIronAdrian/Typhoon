@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon.png">
+    <title>Typhoon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" rel="stylesheet">
+</head>    
+<body id="body">
+    <section id="header" class="header">
+       <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div id="nav-links" class="nav-links">
+                <!--<i id="fa-solid fa-xmark"></i>-->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="answer.html">WEATHER</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+           <!-- <i id="fa-solid fa-bars"></i> -->
+        </nav>  
+    </section>
+    <div id="text-box" class="text-box">
+    
+    <div id="wrapper" class="wrapper">
+    <section id="input-part" class="input-part">
+        <p id="info-txt" class="info-txt">Please enter a valid city name</p>
+        <input type="text" placeholder="Enter city name" id = "input" class = "input" >
+        <div id="separator" class="separator"></div>
+        <button id="button">Get Device Location</button>
+    </section>  
+    <section id="weather-part" class="weather-part" style="text-align: center;">
+        <div id="temp" class="temp">
+            <span id="numb-temp" class="numb">13</span>
+            <span id="deg" class="deg">°</span>C    
+        </div>
+        <div id="weather" class="weather">Broken Clouds</div>
+        <div id="location" class="location">
+            <i id="bx bx-map" class="bx bx-map"></i>
+            <span id="span-location">Kathmandu, Nepal</span>
+        </div>
+        <div id="bottom-details" class="bottom-details">
+           <div id="column feels" class="column feels">
+              <i id="bx bxs-thermometer" class="bx bxs-thermometer"></i>
+              <div id="details" class="details">
+                 <div id="temp" class="temp">
+                     <span id="numb-feels" class="numb">17</span>
+                     <span id="deg" class="deg">°</span>
+                 </div>   
+                 <p>Feels like</p>
+              </div>  
+           </div> 
+           <div id="column humidity" class="column humidity">
+                <i id="bx bxs-droplet-half" class="bx bxs-droplet-half"></i>
+                <div id="details" class="details">
+                    <span id="numb-details" class="numb">84%</span>
+                    <p>Humidity</p>
+                </div>
+           </div>
+        </div>  
+    </section>
+    </div>
+    </div>
+
+    <script type = "text/javascript" src="./country-list.js"></script>
+    <script type = "text/javascript" src="./script.js"></script>
+
+    <div style="position: absolute; bottom: 5px; text-align: center; color: beige; width: 100%;">
+        Made by Mihai Mocanu (C) 2022
+    </div>
+</body>
+</html>   
